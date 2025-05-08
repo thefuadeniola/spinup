@@ -44,4 +44,9 @@ To deploy the compiled .so rust files to the blockchain:
 npm run deploy
 ```
 
+To run your typescript main.ts file
+```
+npm run client
+```
+
 To see a full list of executables such as `npm run reset and build` and `npm run clean`, check out this [package.json](https://github.com/thefuadeniola/solana_example_project/blob/main/package.json) and [cicd](https://github.com/thefuadeniola/solana_example_project/blob/main/scripts/cicd.sh) files.
