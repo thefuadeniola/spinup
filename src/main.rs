@@ -6,7 +6,7 @@ use new::new_project;
 pub mod add;
 use add::add_program;
 
-use spinup::{Cli, Commands};
+use solana_spinup::{Cli, Commands};
 
 fn main() {
     let cli = Cli::parse();
