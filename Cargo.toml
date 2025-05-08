@@ -2,6 +2,9 @@
 name = "spinup"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "A spinup tool that scaffolds a solana project alongside its base dependencies"
+authors = ["Fuad Olaleye <leyefuad@gmail.com>"]
 
 [dependencies]
 clap = { version = "4.3", features = ["derive"] }
