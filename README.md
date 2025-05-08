@@ -14,6 +14,7 @@ solana-spinup new <PROJECT_NAME>
 
 This spins up a new project with the sample file structure:
 ## file structure
+```
 ├── program
 | ├── cargo.toml
 | └── src
@@ -21,6 +22,7 @@ This spins up a new project with the sample file structure:
 ├── client
 | └── main.ts
 └── package.json
+```
 
 It initializes and adds necessary dependencies including bosrh, mz, etc.
 Since you can have multiple rust programs inside one solana project, to add another program to our project:
@@ -29,7 +31,7 @@ Inside the project directory you have created
 solana-spinup add <NEW_PROGRAM_NAME>
 ```
 
-# Scripts
+## Scripts
 This binary initializes the project with scripts to semi automate build, deployment and running the project. By combining npm and cargo commands into 1.
 
 To compile the rust programs and place the executables inside a ./dist/program,
