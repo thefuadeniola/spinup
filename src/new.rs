@@ -47,7 +47,10 @@ solana-program="1.9.0"
         "start": "node main.ts"
       },
       "dependencies": {
-        "@solana/web3.js": "^1.98.2"
+        "@solana/web3.js": "^1.98.2",
+        "borsh": "^0.7.0",
+        "mz": "^2.7.0",
+        "yaml": "^1.10.2"
       },
       "devDependencies": {
         "typescript": "^5.0.0"
@@ -55,6 +58,7 @@ solana-program="1.9.0"
     }
     "#;
 
+    
     fs::write(program_path.join("Cargo.toml"), cargo_toml_content).unwrap();
     fs::write(src.join("lib.rs"), "").unwrap();
     fs::write(client.join("main.ts"), main_ts_content).unwrap();

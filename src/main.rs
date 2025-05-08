@@ -4,6 +4,7 @@ pub mod new;
 use new::new_project;
 
 pub mod add;
+use add::add_program;
 
 use spinup::{Cli, Commands};
 
@@ -16,9 +17,11 @@ fn main() {
             new_project(&project_name);
         },
         Commands::Add { program_name } => {
-            println!("Adding rust program: {}", program_name)
+            println!("Adding rust program: {}", program_name);
+            add_program(&program_name);
         }
     }
+
 
 }
 
